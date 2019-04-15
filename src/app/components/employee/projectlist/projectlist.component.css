@@ -1,0 +1,43 @@
+table, td, th {  
+    border: 3px solid #ddd;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  button.btn.btn-primary {
+      background-color: deepskyblue;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-danger {
+      background-color: lightsalmon;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-secondary {
+      background-color: yellowgreen;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-success {
+      background-color: lightpink;
+      height: 50px;
+  }
+  select {
+      height: 50px;
+      border-color: darkgray;
+  }
+  center {
+      color: crimson;
+      font-family: High tower text;
+  }
+  body {
+      background-color: lavender;
+  }

@@ -1,0 +1,54 @@
+table, td, th {  
+    border: 3px solid #ddd;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  th {
+      color:chocolate;
+  }
+  button.btn.btn-square.btn-success {
+      background-color: greenyellow;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-square.btn-danger {
+      background-color: lightcoral;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-primary.btn-sm {
+      background-color: aquamarine;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-primary {
+      background-color: deepskyblue;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-danger {
+      background-color: lightsalmon;
+      size: a5;
+      height: 35px;
+  }
+  button.btn.btn-secondary {
+      background-color: yellowgreen;
+      size: a5;
+      height: 35px;
+  }
+  center {
+      color: darkgreen;
+      font-size: xx-large;
+  }
+  body {
+      background-color: lavenderblush;
+  }
+  

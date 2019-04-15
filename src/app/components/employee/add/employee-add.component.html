@@ -1,0 +1,29 @@
+
+<div class="w3-container" *ngIf="employeeAddForm">
+	<form class="w3-container" [formGroup]="employeeAddForm" (ngSubmit)="doRegister()">
+	<div class="w3-panel w3-round-small w3-teal">
+		<h3><span *ngIf="index != undefined">ADD EMPLOYEE</span> <a routerLink="/" class="w3-button w3-green custom-button"><i class="w3-medium fa fa-chevron-left"></i> Back</a></h3>
+	</div>
+
+		<label class="w3-text-blue"><b>PROJECT NAME</b></label>
+		<input class="w3-input w3-border" type="text" formControlName="project_name">
+		
+		<label class="w3-text-blue"><b>TECHNOLOGIES</b></label>
+		<input class="w3-input w3-border" type="text" formControlName="technologies">
+		
+		<label class="w3-text-blue"><b>DURATION</b></label>
+		<input class="w3-input w3-border" type="text" formControlName="duration">
+		
+		<label class="w3-text-blue"><b>DESCRIPTION</b></label>
+		<input class="w3-input w3-border" type="textarea" formControlName="description">
+		
+		<label class="w3-text-blue"><b>RESPONSIBILITIES</b></label>
+		<input class="w3-input w3-border" type="text" formControlName="responsibilities">
+
+		<br>
+		<button class="w3-btn w3-green" type="submit" [disabled]="!employeeAddForm.valid"><span *ngIf="index == undefined">Save</span><span *ngIf="index != undefined">Update</span> <i class="w3-medium fa fa-check"></i> </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button class="w3-btn w3-green" type="submit" [disabled]="!employeeAddForm.valid"><span *ngIf="index == undefined">Cancel</span>  </button>
+
+	</form>
+</div>
+

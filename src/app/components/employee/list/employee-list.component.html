@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="w3-container" *ngIf="employeeListData">
+	<div class="w3-panel w3-round-small w3-teal">
+			<button routerLink="/" class="w3-button w3-green custom-button"> Export PDF</button>
+		 <button routerLink="/add" class="w3-button w3-green custom-button"><i class="w3-medium  fa fa-plus"></i> Add Project</button>
+		 
+	</div>
+	
+		<div class="w3-panel w3-light-grey w3-padding-16 w3-card-2" *ngIf="(employeeListData | filter:filterData | filter:filterData).length != 0">
+			<table class="table table-bordered table-responsive-md table-striped text-center">
+			<tr>
+				<th><i class="w3-medium custom-icon fa fa-refresh"></i>ID</th>
+				<!-- <th>ID</th> -->
+				<th class="text-center"> PROJECT NAME&nbsp;&nbsp;</th>
+				<th class="text-center"> TECHNOLOGIES&nbsp;&nbsp;</th>
+				<th class="text-center"> DURATION&nbsp;&nbsp;</th>
+				<th class="text-center"> DESCRIPTION&nbsp;&nbsp;</th>
+				<th class="text-center"> RESPONSIBILITIES&nbsp;&nbsp;</th>
+				<th class="text-center"> ACTIONS</th>
+				
+			</tr>
+			<tr *ngFor="let employee of employeeListData | filter:filterData; index as i;" appHighlightemployee>
+				<td>{{i +1}}</td>
+				<td >{{employee.project_name}} </td>
+				<td >{{employee.technologies}}</td>
+				<td >{{employee.duration}}</td>
+				<td >{{employee.description}}</td>
+				<td >{{employee.responsibilities}}</td>
+				<td><i class="fa fa-pencil" style="font-size:20px"[routerLink]="['update',i]" ></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="glyphicon glyphicon-remove" style="font-size:20px"(click)="deleteemployee(i);"></i></td>
+			</tr>
+		</table>
+	</div>
+</div>
+

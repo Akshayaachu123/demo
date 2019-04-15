@@ -1,0 +1,52 @@
+table, td, th {  
+    border: 3px solid #ddd;
+    text-align: center;
+}
+th, td {
+    padding: 15px;
+}
+table.one  {
+
+float:right;
+width:75%;
+}
+button.btn.btn-primary {
+background-color: skyblue;
+height: 35px;
+width:100%;
+}
+button.btn.btn-danger {
+background-color: lightcoral;
+height:35px;
+width:75%;
+}
+button.btn.btn-secondary {
+background-color: skyblue;
+height: 45px;
+}
+b {
+color: chocolate;
+}
+html {
+background-color: lightseagreen;
+}
+custom-select {
+position: relative;
+font-family: Arial;
+}
+
+custom-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+select-selected {
+background-color: DodgerBlue;
+}
+select {
+height: 35px;
+width: 250px;
+}
+input[type="text"] {
+    height: 40px;
+    width: 250px;
+}

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Department</title>
+</head>
+
+<body>
+<h1><b>MANAGE DEPARTMENT</b></h1>
+<hr>
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Add New Department</u></h2>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department Name:</h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="dept">
+ 
+<br/><br/><br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-secondary">ADD DEPARTMENT</button> 
+ 
+ <table class="one">
+ 
+
+	<tr>
+		<th>DEPT ID</th>
+		<th>DEPT NAME</th>
+		<th>EDIT</th>
+		<th>DELETE</th>
+	</tr>
+	<tr *ngFor="let employee of employees; let i= index;"></tr>
+	<tr>
+		<td>{{i+5}}</td>
+		<td>{{employee.id}}</td>
+		<td>{{employee.name}}</td>
+		<td><button type="button" class="btn btn-primary">Edit</button></td>
+		<td><button type="button" class="btn btn-danger" (click)="deleteemployee(i);">Delete</button></td>
+	</tr>
+	<tr>
+			<td>{{i+5}}</td>
+			<td>{{employee.id}}</td>
+			<td>{{employee.name}}</td>
+		<td><button type="button" class="btn btn-primary">Edit</button></td>
+		<td><button type="button" class="btn btn-danger">Delete</button></td>
+	</tr>
+	<tr>
+			<td>{{i+5}}</td>
+			<td>{{employee.id}}</td>
+			<td>{{employee.name}}</td>
+		<td><button type="button" class="btn btn-primary">Edit</button></td>
+		<td><button type="button" class="btn btn-danger">Delete</button></td>
+	</tr>
+	<tr>
+			<td>{{i+5}}</td>
+			<td>{{employee.id}}</td>
+			<td>{{employee.name}}</td>
+		<td><button type="button" class="btn btn-primary">Edit</button></td>
+		<td><button type="button" class="btn btn-danger">Delete</button></td>
+	</tr>
+	<tr>
+			<td>{{i+5}}</td>
+			<td>{{employee.id}}</td>
+			<td>{{employee.name}}</td>
+		<td><button type="button" class="btn btn-primary">Edit</button></td>
+		<td><button type="button" class="btn btn-danger">Delete</button></td>
+	</tr>
+	
+ </table>
+ </body>
+ </html>

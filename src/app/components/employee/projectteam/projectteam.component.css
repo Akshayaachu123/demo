@@ -1,0 +1,37 @@
+table, td, th {  
+    border: 3px solid #ddd;
+    text-align: left;
+  }
+  
+  table.one {
+      float:left;
+      width:45%;
+  }
+  
+  table.two   {
+      
+      float:right;
+      width:45%;
+  }
+  table.three  {
+      
+      float:center;
+      width:100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  th {
+      color:chocolate;
+  }
+  b {
+      color: darkblue;
+  }
+  button.btn.btn-primary {
+      height: 35px;
+      background-color: lightgreen;
+  }
+  body {
+      background-color: lightgoldenrodyellow;
+  }
